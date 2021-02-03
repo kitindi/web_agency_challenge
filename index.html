@@ -5,35 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5"/>
     <link rel="icon" href="devchallenges.png" />
     <link rel="shortcut icon" type="image/x-icon"href="https://devchallenges.io/"/>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/9ca08a6a82.js" crossorigin="anonymous"></script>
     <title>Eddie Web Agency | Devchallenges</title>    
   </head>
   <body>
    <header>
      <div class="container">
-       <h1 class="logo"></h1>
+       <div class="logo_toggle">
+        <h1 class="logo">Edie</h1>
+        <i class="fas fa-bars"></i>
+       </div>      
        <nav class="navigation">
-         li>a*4
+         <ul>                                           
+           <li><a href="">Home</a></li>
+           <li><a href=""> Services</a></li>
+           <li><a href="">Clients</a></li>
+           <li><a href="">Our Works</a></li>
+           <li><a href="">Contact</a></li>
+          </ul>
        </nav>
      </div>
    </header>
    <main>
     <div class="container">
        <section class="hero">
-
+         <div class="hero__text">
+          <p class="hero__intro">Unhappy with your website?</p>
+          <h2 class="hero_heading">We create beautiful<br> and fast web services</h2>
+         </div>
+         <div class="hero__image">
+           <img src="./img/heroImage.jpg" alt="">
+         </div>
        </section>
+       <!-- about section -->
        <section class="about">
-
+      <div class="about__text">
+        <h2 class="about__heading">Story, emotion<br> and purpose</h2>
+        <p class="about__description">
+          We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.
+        </p>
+        <p class="about__form--text">Want us to contact you?</p>
+        <div class="about__form">
+          <input type="email" name="email"> <button>Join</button>
+        </div>
+      </div>
        </section>
+       <!-- services section -->
        <section class="services">
+         <h2 class="services__heading">We offer high demand services  </h2>
+         <div class="services__offered">
+           <div class="service__card">
+            <p class="icon"><i class="fas fa-pen"></i></p>
+            <p class="card__title">UI/UX Design</p>
+            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+            <button class="btn card_gray">Get started</button>
+           </div>
+         </div>
 
        </section>
        <section class="our___works">
+         <h2 class="work__heading">Good design means <br> good business</h2>
+         <div class="portfolio">
+           <div class="img">
+            <figure>
+              <img src="./img/smarthome.jpg" alt="">
+              <figcaption>Full stack application</figcaption>
+            </figure>                    
+               <p class="img__desciption">Smart home dashboard</p>            
+           </div>
+           <!-- img2 -->
+           <div class="img">
+            <figure>
+              <img src="./img/onboard.png" alt="">
+              <figcaption>UX/UI design</figcaption>
+            </figure>                    
+               <p class="img__desciption">Onboard application</p>          
+           </div>
+           <!-- img3 -->
+           <div class="img">
+            <figure>
+              <img src="./img/booking.png" alt="booking">
+              <figcaption>Mobile application</figcaption>
+            </figure>                    
+               <p class="img__desciption">Booking system</p>            
+           </div>
+           <!-- img4 -->
+           <div class="img">
+            <figure>
+              <img src="./img/juice-product.png" alt="">
+              <figcaption>Front End application</figcaption>   
+            </figure>                     
+               <p class="img__desciption">Juice product homepage</p>           
+           </div>    
+           <div class="seeall">
+             <p>See all</p>
+           </div>                  
+         </div>
 
        </section>
        <section class="team">
-
+        <div class="team__text">
+          <p class="intro">Meet the team</p>
+          <h3 class="team_title">We are chilled <br>and a laidback <br>team</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="team_img">
+          <div>
+            <img src="./img/person3.png" alt="person1">
+          </div>
+          <div>
+            <img src="./img/person1.png" alt="person1">
+          </div>
+          <div>
+            <img src="./img/person2.png" alt="person1">
+          </div>
+        </div>
        </section>
-       <section class="clients">
+       <section class="testimonies">
+         <div class="client">
+           <p>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.” </p>
+           <div class="client_profile">
+             <div class="client_img">
+               <img src="./img/person4.png" alt="">
+             </div>
+             <div class="client_info">
+               <p class="name">Carlos Tran</p>
+               <div class="role">The Decorate Gatsby</div>
+             </div>
+           </div>
+         </div>
 
        </section>
     </div>
