@@ -18,7 +18,7 @@
      <div class="container">
        <div class="logo_toggle">
         <h1 class="logo">Edie</h1>
-        <i class="fas fa-bars fa-2x"></i>
+        <i class="fas fa-bars toggle-icon"></i>
        </div>      
        <nav class="navigation">
          <ul>                                           
@@ -39,19 +39,19 @@
           <h2 class="hero_heading">We create beautiful<br> and fast web services</h2>
          </div>
          <div class="hero__image">
-           <img src="./img/heroImage.jpg" alt="">
+           <img src="./img/heroImage.jpg" alt="" class="hero-image">
          </div>
        </section>
        <!-- about section -->
        <section class="about">
-      <div class="about__text">
+        <div class="about__text">
         <h2 class="about__heading">Story, emotion<br> and purpose</h2>
         <p class="about__description">
           We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.
         </p>
         <p class="about__form--text">Want us to contact you?</p>
         <div class="about__form">
-          <input type="email" name="email"> <button>Join</button>
+          <input type="email" name="email" class="input-form" placeholder="Email"> <input type="button" value="Join" class="input-submit"></input>
         </div>
       </div>
        </section>
@@ -60,11 +60,25 @@
          <h2 class="services__heading">We offer high demand services  </h2>
          <div class="services__offered">
            <div class="service__card">
-            <p class="icon"><i class="fas fa-pen"></i></p>
+            <p class="icon blue-icon"><i class="fas fa-pen"></i></p>
             <p class="card__title">UI/UX Design</p>
             <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
             <button class="btn card_gray">Get started</button>
            </div>
+            <div class="service__card">
+              <p class="icon green-icon"><i class="fas fa-code"></i></p>
+              <p class="card__title">Front End</p>
+              <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat
+                aliquet id quis turpis.</p>
+              <button class="btn card_gray">Get started</button>
+            </div>
+            <div class="service__card">
+              <p class="icon red-icon"><i class="fas fa-server"></i></p>
+              <p class="card__title">Back End</p>
+              <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat
+                aliquet id quis turpis.</p>
+              <button class="btn card_gray">Get started</button>
+            </div>
          </div>
 
        </section>
@@ -103,7 +117,7 @@
                <p class="img__desciption">Juice product homepage</p>           
            </div>    
            <div class="seeall">
-             <p>See all</p>
+             <p><a href="">See all <i class="fas fa-arrow-right"></i></a></p>
            </div>                  
          </div>
 
@@ -112,23 +126,23 @@
         <div class="team__text">
           <p class="intro">Meet the team</p>
           <h3 class="team_title">We are chilled <br>and a laidback <br>team</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="team_img">
-          <div>
+        <div class="team_images">
+          <div class="team-image">
             <img src="./img/person3.png" alt="person1">
           </div>
-          <div>
+          <div class="team-image">
             <img src="./img/person1.png" alt="person1">
           </div>
-          <div>
+          <div class="team-image">
             <img src="./img/person2.png" alt="person1">
           </div>
         </div>
        </section>
        <section class="testimonies">
-         <div class="client">
-           <p>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.” </p>
+         <div class="clients">
+           <p class="client-test">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.” </p>
            <div class="client_profile">
              <div class="client_img">
                <img src="./img/person4.png" alt="">
@@ -143,7 +157,7 @@
        </section>
     </div>
    </main>
-   <footer>
+   <footer class="footer">
     <div class="container">
        <section class="links">
         <ul>
