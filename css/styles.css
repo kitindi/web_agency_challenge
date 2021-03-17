@@ -304,6 +304,49 @@ header .container .logo_toggle {
   padding: 0.5em 0;
   font-size: 1.1em;
 }
+.footer .social {
+  padding: 1.5em 1em;
+}
 .footer .social .logo {
   font-size: var(--heading-fontSize);
+}
+.footer .social .icons {
+  display: flex;
+}
+.footer .social .icons p {
+  margin-right: 1em;
+  font-size: 1.2em;
+}
+.footer .social .icons p:last-child {
+  margin: 0;
+}
+.footer .footer__form {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 0.2em;
+  border-radius: 5px;
+  padding: 0.3em;
+  background: #f2f2f2;
+}
+
+.footer__form .input-form {
+  padding: 0.85em;
+  border: none;
+  background-color: inherit;
+}
+.footer__form .input-submit {
+  border: none;
+  border-radius: 10px;
+  padding: 0.85em;
+  color: #fff;
+  background: #2d9cdb;
+}
+.footer__form .input-form:focus,
+.footer__form .input-submit:focus {
+  outline: none;
+}
+.footer .subscribe-text,
+.footer .copyright p {
+  color: var(--gray-paragraph);
+  margin: 0.5em 0;
 }
