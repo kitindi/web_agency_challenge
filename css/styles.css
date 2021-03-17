@@ -74,6 +74,37 @@ header .container .logo_toggle {
   display: none;
 }
 
+@media (min-width: 600px) {
+  header .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  header .container .logo_toggle {
+    display: block;
+  }
+  .container .logo_toggle .toggle-icon {
+    display: none;
+  }
+  .container .navigation {
+    display: block;
+  }
+  .container .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    padding-top: 0.75em;
+  }
+  .navigation ul li {
+    display: inline;
+    margin-right: 0.75em;
+  }
+  .navigation ul li a {
+    display: inline-block;
+    color: var(--primary-color);
+    padding: 0.2em 0;
+  }
+}
+
 /* HERO SECTION */
 
 .hero {
