@@ -159,6 +159,15 @@ header .container .logo_toggle {
 .services .services__offered {
   padding-left: 1em;
 }
+.services .service__card:hover {
+  box-shadow: 0 0 4px 4px #f2f2f2;
+  border-radius: 10px;
+  padding: 0.75em;
+}
+.services .service__card:hover .btn {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
 .services .service__card .icon {
   color: #fff;
   font-size: 1.2em;
