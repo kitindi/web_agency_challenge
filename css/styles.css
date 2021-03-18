@@ -17,7 +17,7 @@
   --gray-paragraph: #828282;
   --green-button: #27ae60;
   --red-button: #eb5757;
-  --section-ptb: 2em;
+  --section-ptb: 1.5em;
   --footer-background: #100e1d;
   --footer-fontColor: #f2f2f2;
 }
@@ -76,11 +76,9 @@ header .container .logo_toggle {
 
 @media (min-width: 600px) {
   header .container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-  header .container .logo_toggle {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 0;
   }
   .container .logo_toggle .toggle-icon {
     display: none;
@@ -88,20 +86,14 @@ header .container .logo_toggle {
   .container .navigation {
     display: block;
   }
-  .container .navigation ul {
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    padding-top: 0.75em;
-  }
-  .navigation ul li {
+  .container .navigation ul li {
     display: inline;
-    margin-right: 0.75em;
   }
   .navigation ul li a {
     display: inline-block;
+    padding: 0.5em 0.75em;
     color: var(--primary-color);
-    padding: 0.2em 0;
+    font-weight: 500;
   }
 }
 
@@ -124,8 +116,26 @@ header .container .logo_toggle {
   color: var(--primary-color);
 }
 .hero .hero__image .hero-image {
-  height: 200px;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+@media (min-width: 600px) {
+  .hero {
+    padding: 1.2em 0;
+  }
+  .hero .hero__text {
+    padding-left: 8em;
+    margin-bottom: 2em;
+  }
+  .hero .hero__tex .hero_heading {
+    font-size: var(--subheading-fontSize);
+    color: var(--primary-color);
+    line-height: 4em;
+  }
+  .hero .hero__image {
+    height: 300px;
+  }
 }
 
 /* ABOUT SECTION */
@@ -172,6 +182,14 @@ header .container .logo_toggle {
 .about .about__form .input-form:focus,
 .about .about__form .input-submit:focus {
   outline: none;
+}
+
+@media (min-width: 600px) {
+  .about .about__text {
+    padding-left: 8em;
+    margin-bottom: 0.75em;
+    width: 500px;
+  }
 }
 
 /* SERVICES SECTION */
@@ -225,6 +243,15 @@ header .container .logo_toggle {
 .services .service__card .card__description {
   margin-bottom: 1em;
   color: var(--paragraph-color);
+}
+
+@media (min-width: 600px) {
+  .services .services__offered {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    padding-left: 1em;
+  }
 }
 
 /* OUR WORKS SECTION */
