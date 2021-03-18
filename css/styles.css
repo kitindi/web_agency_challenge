@@ -17,7 +17,7 @@
   --gray-paragraph: #828282;
   --green-button: #27ae60;
   --red-button: #eb5757;
-  --section-ptb: 1.5em;
+  --section-ptb: 1.75em;
   --footer-background: #100e1d;
   --footer-fontColor: #f2f2f2;
 }
@@ -36,10 +36,12 @@ li {
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1.2em;
 }
 img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
   border-radius: 20px;
 }
 .btn {
@@ -49,7 +51,7 @@ img {
   color: #4f4f4f;
   font-weight: 700;
   letter-spacing: 1.2;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -78,7 +80,7 @@ header .container .logo_toggle {
   header .container {
     display: flex;
     justify-content: space-between;
-    padding: 1.5em 0;
+    padding: 1.5em;
   }
   .container .logo_toggle .toggle-icon {
     display: none;
@@ -132,9 +134,6 @@ header .container .logo_toggle {
     font-size: var(--subheading-fontSize);
     color: var(--primary-color);
     line-height: 4em;
-  }
-  .hero .hero__image {
-    height: 300px;
   }
 }
 
@@ -243,6 +242,7 @@ header .container .logo_toggle {
 .services .service__card .card__description {
   margin-bottom: 1em;
   color: var(--paragraph-color);
+  font-size: var(--paragraph-fontSize);
 }
 
 @media (min-width: 600px) {
@@ -290,6 +290,28 @@ header .container .logo_toggle {
   font-size: 0.75em;
   margin-left: 1em;
 }
+.portfolio {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1em;
+  }
+  .portfolio .img {
+    /* width: 400px; */
+    display: grid;
+  }
+  .portfolio .img .image-1 {
+    align-self: end;
+  }
+  .seeall {
+    text-align: right;
+  }
+}
 
 /* TEAM SECTION */
 .team {
@@ -324,6 +346,19 @@ header .container .logo_toggle {
   align-items: center;
 }
 
+@media (min-width: 600px) {
+  .team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team-image img {
+    max-width: 75%;
+  }
+  .team__text {
+    width: 300px;
+  }
+}
+
 /* TESTMONIES SECTION */
 .testimonies {
   padding: var(--section-ptb) 0;
@@ -346,6 +381,19 @@ header .container .logo_toggle {
   font-size: 1.2em;
   color: var(--gray-paragraph);
   font-weight: 500;
+}
+@media (min-width: 600px) {
+  .testimonies .client-test {
+    width: 620px;
+  }
+  .client_img img {
+    max-width: 80%;
+  }
+  .testimonies .clients .client_profile {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 0.5em;
+  }
 }
 
 /* FOOTER SECTION */
@@ -416,4 +464,13 @@ header .container .logo_toggle {
 .footer .copyright p {
   color: var(--gray-paragraph);
   margin: 0.5em 0;
+}
+@media (min-width: 600px) {
+  .footer .container-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .copyright .container {
+    text-align: center;
+  }
 }
